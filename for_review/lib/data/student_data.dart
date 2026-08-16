@@ -11,59 +11,6 @@ final Map<String, Map<String, dynamic>> monthlyExpenses = {
       'publicTranspo': 900,
     }
   },
-};
-
-final Map<String, Map<String, dynamic>> studentProfiles = {
-  'first_member': {
-    'fullName': {
-      'last_name': 'Santos',
-      'first_name': 'Miguel',
-      'middle_initial': 'R',
-    },
-    'course': 'BS Computer Science',
-    'contact_info': {
-      'email': 'miguel.santos@example.com',
-      'phone': '+63 912 345 6789',
-    },
-    'address': {
-      'region': 'NCR',
-      'province': 'Metro Manila',
-      'city': 'Quezon City',
-      'barangay': 'Central',
-      'home_address': '123 Sampaguita St.'
-    },
-    'expenses': {
-      'food': 600,
-      'transport': 300,
-      'supplies': 150,
-    }
-  },
-};
-
-final Map<int, Map<String, dynamic>> drawerContent = {
-  0: {
-    'leading': Icons.home,
-    'title': 'Home',
-    'route': null,
-  },
-  1: {
-    'leading': Icons.person,
-    'title': 'Profile Pages',
-    'route': '/profiles',
-  }
-};
-
-final Map<String, Map<String, dynamic>> monthlyExpenses = {
-  'July': {
-    'receivedAmount': {'allowance': 3200},
-    'expenseAmount': {
-      'chickenJoo': 350,
-      'mineralWater': 280,
-      'ballPointPen': 90,
-      'transpoTrain': 280,
-      'publicTranspo': 900,
-    }
-  },
   'August': {
     'receivedAmount': {'allowance': 3500},
     'expenseAmount': {

@@ -22,7 +22,6 @@ class MyApp extends StatelessWidget {
       ),
       home: const DashboardScreen(),
       routes: {
-        '/expenses': (context) => const ExpensesPage(),
         '/profiles': (context) => const ProfileListPage(),
       },
     );
