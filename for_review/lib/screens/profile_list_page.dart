@@ -73,7 +73,7 @@ class StudentProfilePage extends StatelessWidget {
                   return CircleAvatar(
                     radius: 48,
                     backgroundImage: has
-                        ? const AssetImage('assets/avatars/default_avatar.png') as ImageProvider
+                        ? AssetImage('assets/avatars/$id.png') as ImageProvider
                         : const NetworkImage('https://i.pravatar.cc/150?img=9'),
                   );
                 },
