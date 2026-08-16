@@ -36,13 +36,13 @@ final Map<String, Map<String, dynamic>> monthlyExpenses = {
 final Map<String, Map<String, dynamic>> studentProfiles = {
   'first_member': {
     'fullName': {
-      'last_name': 'Santos',
-      'first_name': 'Miguel',
-      'middle_initial': 'R',
+      'last_name': 'Baby',
+      'first_name': 'Justin',
+      'middle_initial': 'B',
     },
     'course': 'BS Computer Science',
     'contact_info': {
-      'email': 'miguel.santos@example.com',
+      'email': 'justin.baby@example.com',
       'phone': '+63 912 345 6789',
     },
     'address': {
@@ -67,13 +67,13 @@ final Map<String, Map<String, dynamic>> studentProfiles = {
   },
   'second_member': {
     'fullName': {
-      'last_name': 'Garcia',
-      'first_name': 'Ana',
-      'middle_initial': 'L',
+      'last_name': 'Pilapil',
+      'first_name': 'Frix',
+      'middle_initial': 'P',
     },
     'course': 'BS Information Technology',
     'contact_info': {
-      'email': 'ana.garcia@example.com',
+      'email': 'frix.pilapil@example.com',
       'phone': '+63 917 111 2222',
     },
     'address': {
@@ -98,13 +98,13 @@ final Map<String, Map<String, dynamic>> studentProfiles = {
   },
   'third_member': {
     'fullName': {
-      'last_name': 'Lopez',
-      'first_name': 'Ramon',
-      'middle_initial': 'V',
+      'last_name': 'Aniog',
+      'first_name': 'Dayer',
+      'middle_initial': 'A',
     },
     'course': 'BS Electronics',
     'contact_info': {
-      'email': 'ramon.lopez@example.com',
+      'email': 'dayer.aniog@example.com',
       'phone': '+63 918 333 4444',
     },
     'address': {
@@ -129,13 +129,13 @@ final Map<String, Map<String, dynamic>> studentProfiles = {
   },
   'fourth_member': {
     'fullName': {
-      'last_name': 'Reyes',
-      'first_name': 'Clara',
-      'middle_initial': 'M',
+      'last_name': 'Victorino',
+      'first_name': 'Angelo',
+      'middle_initial': 'V',
     },
     'course': 'BS Nursing',
     'contact_info': {
-      'email': 'clara.reyes@example.com',
+      'email': 'angelo.victorino@example.com',
       'phone': '+63 919 555 6666',
     },
     'address': {
