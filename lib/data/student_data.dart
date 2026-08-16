@@ -67,19 +67,19 @@ final Map<String, Map<String, dynamic>> studentProfiles = {
   },
   'second_member': {
     'fullName': {
-      'last_name': 'Aniog',
-      'first_name': 'Dayer',
+      'last_name': 'Pilapil',
+      'first_name': 'Frix',
       'middle_initial': 'L',
     },
     'course': 'BS Information Technology',
     'contact_info': {
-      'email': 'dayer.aniog@example.com',
+      'email': 'frix.pilapil@example.com',
       'phone': '+63 917 111 2222',
     },
     'address': {
-      'region': 'CALABARZON',
-      'province': 'Laguna',
-      'city': 'San Pablo',
+      'region': 'NCR',
+      'province': 'Metro Manila',
+      'city': 'Pasig',
       'barangay': 'Mayondon',
       'home_address': '45 Rizal Ave.'
     },
@@ -98,13 +98,13 @@ final Map<String, Map<String, dynamic>> studentProfiles = {
   },
   'third_member': {
     'fullName': {
-      'last_name': 'Pilapil',
-      'first_name': 'Frix',
+      'last_name': 'Aniog',
+      'first_name': 'Dayer',
       'middle_initial': 'V',
     },
     'course': 'BS Electronics',
     'contact_info': {
-      'email': 'frix.pilapil@example.com',
+      'email': 'dayer.aniog@example.com',
       'phone': '+63 918 333 4444',
     },
     'address': {
