@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
+import 'package:flutter/foundation.dart' show kIsWeb;
 
 void main() {
   runApp(const MyApp());
@@ -396,13 +397,13 @@ class ProfileListPage extends StatelessWidget {
           final name = '${entry['fullName']['first_name']} ${entry['fullName']['last_name']}';
           final course = entry['course'] ?? '';
           return FutureBuilder<bool>(
-            future: assetExists('assets/avatars/$key.jpg'),
+            future: assetExists('assets/avatars/$key.png'),
             builder: (context, snap) {
               final has = snap.data == true;
               return ListTile(
                 leading: CircleAvatar(
                   backgroundImage: has
-                      ? AssetImage('assets/avatars/$key.jpg') as ImageProvider
+                    ? AssetImage('assets/avatars/$key.png') as ImageProvider
                       : NetworkImage('https://i.pravatar.cc/150?img=${index + 3}'),
                 ),
                 title: Text(name),
@@ -444,13 +445,13 @@ class StudentProfilePage extends StatelessWidget {
           children: [
             Center(
               child: FutureBuilder<bool>(
-                future: assetExists('assets/avatars/$id.jpg'),
+                future: assetExists('assets/avatars/$id.png'),
                 builder: (context, snap) {
                   final has = snap.data == true;
                   return CircleAvatar(
                     radius: 48,
                     backgroundImage: has
-                        ? AssetImage('assets/avatars/$id.jpg') as ImageProvider
+                      ? AssetImage('assets/avatars/$id.png') as ImageProvider
                         : NetworkImage('https://i.pravatar.cc/150?img=9'),
                   );
                 },
