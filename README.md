@@ -2,6 +2,8 @@
 
 A new Flutter project.
 
+IMPORTANT: For a compact, reviewer-friendly snapshot of this app see the `for_review/` folder. It contains only the core `lib/` sources and a minimal `pubspec.yaml` so your professor can open the app quickly.
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
