@@ -1,0 +1,18 @@
+name: student_dashboard
+description: A sample Flutter dashboard showing monthly expenses and student profiles.
+publish_to: 'none'
+version: 1.0.0
+environment:
+  sdk: '>=2.17.0 <4.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/avatars/
