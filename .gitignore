@@ -8,3 +8,10 @@ pubspec.lock
 *.iml
 /.gradle/
 /.flutter-plugins
+
+# Ignore generated metadata and platform folders not required for this repo
+.git_remotes.txt
+.metadata
+linux/
+macos/
+windows/
