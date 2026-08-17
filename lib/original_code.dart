@@ -1,5 +1,5 @@
 // Original maps from the prompt (kept as a raw string for review).
-const String originalPrompt = r'''
+const String originalCode = r'''
 Map<String,Map<String,dynamic>> monthlyExpenses = {
     'August' : {
         'receivedAmount' : {

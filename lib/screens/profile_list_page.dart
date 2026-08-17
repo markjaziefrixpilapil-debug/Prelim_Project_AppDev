@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import '../data/student_data.dart';
-import '../utils/asset_helper.dart';
 
 class ProfileListPage extends StatelessWidget {
   const ProfileListPage({super.key});
@@ -19,28 +18,19 @@ class ProfileListPage extends StatelessWidget {
           final name =
               '${entry['fullName']['first_name']} ${entry['fullName']['last_name']}';
           final course = entry['course'] ?? '';
-          return FutureBuilder<bool>(
-            future: assetExists('assets/avatars/$key.png'),
-            builder: (context, snap) {
-              final has = snap.data == true;
-              return ListTile(
-                leading: CircleAvatar(
-                  backgroundImage: has
-                      ? AssetImage('assets/avatars/$key.png') as ImageProvider
-                      : NetworkImage(
-                          'https://i.pravatar.cc/150?img=${index + 3}'),
-                ),
-                title: Text(name),
-                subtitle: Text(course),
-                trailing: ElevatedButton(
-                  child: const Text('View'),
-                  onPressed: () {
-                    Navigator.of(context).push(MaterialPageRoute(
-                        builder: (_) => StudentProfilePage(id: key)));
-                  },
-                ),
-              );
-            },
+          return ListTile(
+            leading: CircleAvatar(
+              backgroundImage: AssetImage('assets/avatars/$key.png'),
+            ),
+            title: Text(name),
+            subtitle: Text(course),
+            trailing: ElevatedButton(
+              child: const Text('View'),
+              onPressed: () {
+                Navigator.of(context).push(MaterialPageRoute(
+                    builder: (_) => StudentProfilePage(id: key)));
+              },
+            ),
           );
         },
       ),
@@ -69,17 +59,9 @@ class StudentProfilePage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Center(
-              child: FutureBuilder<bool>(
-                future: assetExists('assets/avatars/$id.png'),
-                builder: (context, snap) {
-                  final has = snap.data == true;
-                  return CircleAvatar(
-                    radius: 48,
-                    backgroundImage: has
-                        ? AssetImage('assets/avatars/$id.png') as ImageProvider
-                        : const NetworkImage('https://i.pravatar.cc/150?img=9'),
-                  );
-                },
+              child: CircleAvatar(
+                radius: 48,
+                backgroundImage: AssetImage('assets/avatars/$id.png'),
               ),
             ),
             const SizedBox(height: 12),
