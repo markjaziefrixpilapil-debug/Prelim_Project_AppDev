@@ -133,7 +133,7 @@ final Map<String, Map<String, dynamic>> studentProfiles = {
       'first_name': 'Angelo',
       'middle_initial': 'M',
     },
-    'course': 'BS Nursing',
+    'course': 'BS Information Technology',
     'contact_info': {
       'email': 'angelo.victorino@example.com',
       'phone': '+63 919 555 6666',
