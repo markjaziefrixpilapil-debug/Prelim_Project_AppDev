@@ -27,7 +27,7 @@ class ExpensesPage extends StatelessWidget {
               borderRadius: BorderRadius.circular(12),
             ),
             leading: CircleAvatar(
-              backgroundColor: Colors.indigo,
+              backgroundColor: Colors.grey.shade300,
               child: Text(expense.key[0].toUpperCase()),
             ),
             title: Text(expense.key),
