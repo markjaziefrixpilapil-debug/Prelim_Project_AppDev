@@ -69,19 +69,19 @@ final Map<String, Map<String, dynamic>> studentProfiles = {
     'fullName': {
       'last_name': 'Pilapil',
       'first_name': 'Frix',
-      'middle_initial': 'L',
+      'middle_initial': '',
     },
     'course': 'BS Information Technology',
     'contact_info': {
-      'email': 'frix.pilapil@example.com',
-      'phone': '+63 917 111 2222',
+      'email': 'frix.pilapil@gmail.com',
+      'phone': '+63 951 6845 135',
     },
     'address': {
       'region': 'NCR',
       'province': 'Metro Manila',
       'city': 'Pasig',
-      'barangay': 'Mayondon',
-      'home_address': '45 Rizal Ave.'
+      'barangay': 'Sta.Lucia',
+      'home_address': '35 E Main St.'
     },
     'expenses': {
       'food': 700,
@@ -102,16 +102,16 @@ final Map<String, Map<String, dynamic>> studentProfiles = {
       'first_name': 'Dayer',
       'middle_initial': 'V',
     },
-    'course': 'BS Electronics',
+    'course': 'BS Yearning',
     'contact_info': {
       'email': 'dayer.aniog@example.com',
       'phone': '+63 918 333 4444',
     },
     'address': {
-      'region': 'Bicol',
-      'province': 'Albay',
-      'city': 'Legazpi',
-      'barangay': 'San Roque',
+      'region': 'NCR',
+      'province': 'Metro Manila',
+      'city': 'Pasig',
+      'barangay': 'Manggahan',
       'home_address': '88 Mayon St.'
     },
     'expenses': {
@@ -139,9 +139,9 @@ final Map<String, Map<String, dynamic>> studentProfiles = {
       'phone': '+63 919 555 6666',
     },
     'address': {
-      'region': 'Central Luzon',
-      'province': 'Pampanga',
-      'city': 'Angeles',
+      'region': 'NCR',
+      'province': 'Metro Manila',
+      'city': 'Quezon City',
       'barangay': 'Cutud',
       'home_address': '200 Clark Rd.'
     },
