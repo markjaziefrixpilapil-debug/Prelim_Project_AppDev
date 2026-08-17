@@ -69,7 +69,7 @@ final Map<String, Map<String, dynamic>> studentProfiles = {
     'fullName': {
       'last_name': 'Pilapil',
       'first_name': 'Frix',
-      'middle_initial': '',
+      'middle_initial': 'A',
     },
     'course': 'BS Information Technology',
     'contact_info': {
@@ -131,7 +131,7 @@ final Map<String, Map<String, dynamic>> studentProfiles = {
     'fullName': {
       'last_name': 'Victorino',
       'first_name': 'Angelo',
-      'middle_initial': 'M',
+      'middle_initial': 'C',
     },
     'course': 'BS Information Technology',
     'contact_info': {
