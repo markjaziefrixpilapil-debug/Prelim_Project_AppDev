@@ -16,3 +16,5 @@ linux/
 macos/
 windows/
 archive/
+# Widget Preview related
+.widget_preview/
