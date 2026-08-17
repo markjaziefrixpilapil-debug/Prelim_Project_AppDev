@@ -397,9 +397,12 @@ class ProfileDetailsPage extends StatelessWidget {
             child: ProfileAvatar(student: student, radius: 42),
           ),
           const SizedBox(height: 24),
-          Text(student['name'],
-              style:
-                  const TextStyle(fontSize: 22, fontWeight: FontWeight.bold)),
+          Center(
+            child: Text(
+              student['name'],
+              style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+            ),
+          ),
           const SizedBox(height: 16),
           Text('Course: ${student['course']}'),
           const SizedBox(height: 8),
