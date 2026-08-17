@@ -16,7 +16,8 @@ class ProfileListPage extends StatelessWidget {
         itemBuilder: (context, index) {
           final key = studentProfiles.keys.elementAt(index);
           final entry = studentProfiles[key]!;
-          final name = '${entry['fullName']['first_name']} ${entry['fullName']['last_name']}';
+          final name =
+              '${entry['fullName']['first_name']} ${entry['fullName']['last_name']}';
           final course = entry['course'] ?? '';
           return FutureBuilder<bool>(
             future: assetExists('assets/avatars/$key.png'),
@@ -26,14 +27,16 @@ class ProfileListPage extends StatelessWidget {
                 leading: CircleAvatar(
                   backgroundImage: has
                       ? AssetImage('assets/avatars/$key.png') as ImageProvider
-                      : NetworkImage('https://i.pravatar.cc/150?img=${index + 3}'),
+                      : NetworkImage(
+                          'https://i.pravatar.cc/150?img=${index + 3}'),
                 ),
                 title: Text(name),
                 subtitle: Text(course),
                 trailing: ElevatedButton(
                   child: const Text('View'),
                   onPressed: () {
-                    Navigator.of(context).push(MaterialPageRoute(builder: (_) => StudentProfilePage(id: key)));
+                    Navigator.of(context).push(MaterialPageRoute(
+                        builder: (_) => StudentProfilePage(id: key)));
                   },
                 ),
               );
@@ -83,24 +86,30 @@ class StudentProfilePage extends StatelessWidget {
             Center(
               child: Text(
                 '${full['first_name']} ${full['middle_initial']}. ${full['last_name']}',
-                style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                style:
+                    const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
               ),
             ),
             const SizedBox(height: 18),
-            const Text('Contact', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600)),
+            const Text('Contact',
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600)),
             const SizedBox(height: 6),
             Text('Email: ${contact['email']}'),
             Text('Phone: ${contact['phone']}'),
             const SizedBox(height: 12),
-            const Text('Address', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600)),
+            const Text('Address',
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600)),
             const SizedBox(height: 6),
-            Text('${address['home_address']}, ${address['barangay']}, ${address['city']}, ${address['province']}, ${address['region']}'),
+            Text(
+                '${address['home_address']}, ${address['barangay']}, ${address['city']}, ${address['province']}, ${address['region']}'),
             const SizedBox(height: 12),
-            const Text('Course', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600)),
+            const Text('Course',
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600)),
             const SizedBox(height: 6),
             Text(profile['course'] ?? ''),
             const SizedBox(height: 12),
-            const Text('Expenses', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600)),
+            const Text('Expenses',
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600)),
             const SizedBox(height: 8),
             ...expenses.entries.map((e) {
               return Padding(
@@ -109,7 +118,8 @@ class StudentProfilePage extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Text(e.key),
-                    Text('₱${e.value}', style: const TextStyle(fontWeight: FontWeight.w600)),
+                    Text('₱${e.value}',
+                        style: const TextStyle(fontWeight: FontWeight.w600)),
                   ],
                 ),
               );
